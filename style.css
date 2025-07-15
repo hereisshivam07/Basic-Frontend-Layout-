@@ -1,0 +1,194 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+
+  background-color: white; /* Light mode by default */
+  color: black; /* Text color for light mode */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.dark-mode {
+  background-color: black; /* Dark mode background */
+  color: white; /* Text color for dark mode */
+}
+
+.dark-mode header {
+  background-color: black; /* Dark mode background */
+  color: white; /* Text color for dark mode */
+}
+
+
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 20px;
+  position: relative;
+}
+
+#options-container {
+display: none;
+position: absolute;
+top: 30px; /* Adjust as needed */
+right: 0;
+background-color: #f9f9f9;
+border: 1px solid #ddd;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+padding: 10px;
+}
+
+/* Styling for individual options */
+.menu-option {
+padding: 5px 10px;
+cursor: pointer;
+transition: background-color 0.2s;
+}
+
+.menu-option:hover {
+background-color: #e0e0e0;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: transform 0.3s ease;
+}
+
+
+
+button {
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cart-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-button:hover {
+  background-color: #45a049;
+}
+
+.cartSidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(136, 44, 217, 0.651);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.cartSidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #5483ba;
+  display: block;
+  transition: 0.3s;
+}
+
+.cartSidebar a:hover {
+  color: #817e7e
+}
+
+.cartSidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+#main {
+  transition: margin-left .5s, margin-right .5s;
+  padding: 16px;
+}
+
+.product {
+  margin: 20px 0;
+}
+
+.product button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: rgba(175, 126, 239, 0.651);
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 200px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h2, .card p {
+  margin: 10px 0;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
